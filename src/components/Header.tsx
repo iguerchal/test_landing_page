@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import logo from "figma:asset/facd60659fd11ee898b4bc3ba30a98c0b406d41d.png";
 
@@ -21,6 +22,13 @@ export default function Header() {
 
           {/* Navigation */}
           <div className="flex items-center gap-2">
+            <Link
+              to="/catalogue"
+              aria-label="View the catalogue"
+              className="text-white px-4 py-2.5 rounded-[14px] hover:bg-white/5 transition-colors focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:border-ring"
+            >
+              Catalogue
+            </Link>
             <button className="text-white px-4 py-2.5 rounded-[14px] hover:bg-white/5 transition-colors">
               Sign In
             </button>
